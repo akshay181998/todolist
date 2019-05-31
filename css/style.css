@@ -29,7 +29,7 @@
 }
 
 .list:hover{
-    background:whitesmoke;
+    background:rgb(214, 214, 214);
 }
 
 .task-list{
@@ -37,7 +37,7 @@
     padding-left:30px;
 }
 
-#add-task button{
+#add-task #add{
     width:50px;
     height:50px;
     border-radius:10rem;
@@ -51,8 +51,35 @@
     top:90%;
     left:80%;
 }
-#add-task button:hover{
+#add-task #add:hover{
     width:51px;
     height:51px;
     box-shadow: 5.5px 5.5px 12px #bfbfbf; 
+}
+
+#newTask{
+    display:none;
+    width:75%;    
+    position:fixed;
+    top:150px;
+    background:rgb(255, 255, 255);
+    min-height:550px;
+    color:black;
+    left:10%;
+    box-shadow: 0.5px 0.5px 6px #bfbfbf;
+}
+
+#newTask form{
+    width:80%;
+    margin:auto;    
+}
+
+#newTask input[type="date"]{
+    padding:0px;
+    padding-left:10px;
+    color:rgb(68, 68, 68);
+}
+
+.cut{
+    text-decoration:line-through;
 }

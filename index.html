@@ -31,69 +31,43 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="#">About us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div id="task-panel">
-            <div class="subtask">
-                <span class="date">27 MAY 2018</span>
-                <div class="list">
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                </div>
-            </div>
-            <div class="subtask">
-                <span class="date">27 MAY 2018</span>
-                <div class="list">
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                </div>
-            </div>
-            <div class="subtask">
-                <span class="date">27 MAY 2018</span>
-                <div class="list">
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                    <div class="task-list">Task 1
-                        <button style="background:none; border:none;"><span class="glyphicon glyphicon-ok"
-                                style="color:rgb(69, 238, 69);"></span></button>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div id="newTask">
+            <form>
+                <br>
+                <span id="close" class="glyphicon glyphicon-remove"
+                    style="float:right; color:rgb(221, 51, 51); cursor:pointer;"></span><br>
+                <label>Task Name</label>
+                <br><br>
+                <input type="text" name="taskName" placeholder="task abc" class="form-control">
+                <br><br>
+                <label>Task date</label>
+                <br><br>
+                <input type="date" name="taskdate" class="input-group date form-control">
+                <br><br>
+                <label>Priority</label
+                <br><br>
+                <select name="priority" id="prio" class="form-control">
+                    <option value="high">high</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </form>
+            <br><br>
+            <button class="btn btn-default form-control" style="width:60% ;margin-left:20%" id="submit">submit</button>
         </div>
         <div id="add-task">
-            <button class="add">&#x2b</button>
+            <button id="add">&#x2b</button>
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="script/app.js"></script>
 </body>
 
 </html>
